@@ -3,18 +3,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IBM Agentic AI Embed</title>
+    <title>AI-Powered Incident Assignment Helper</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: "IBM Plex Sans", Arial, sans-serif;
+            background: #f7f9fb;
+            color: #1b1b1b;
         }
-        #root {
-            height: 100vh;
-            width: 100%;
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #002d9c, #0043ce);
+            color: white;
+            padding: 80px 30px;
+            text-align: center;
         }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Features Section */
+        .section {
+            padding: 60px 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        
+
+        /* Chat Container */
+        
     </style>
 
     
@@ -23,7 +66,29 @@
 <body>
 
     <!-- IBM Agent Chat UI container -->
+
+          <section class="hero">
+        <h1>AI-Powered Incident Assignment Helper</h1>
+        <p>
+            IBM Agentic AI that automatically identifies the correct assignment group and point of contact 
+            by simply reading the incident description, Category, logs, from uploaded PDF files.
+            Reduce SLA breaches, remove guesswork, and boost ITSM efficiency.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <h2 class="section-title">For using click on the Agent button on right</h2>
+
+        
+    </section>
+
+
+    <!-- Chat Widget Container -->
     <div id="root"></div>
+
+
+    
 
     <!-- IBM Agentic AI Embed Script -->
     <script src="path-to-embed-script.js"></script>
